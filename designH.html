@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* CSS Reset */
+    body {
+        box-sizing: border-box;
+       background: #000;
+       background-color:rgb(243, 239, 239);
+        
+        background-repeat: no-repeat;
+        height: 3000px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+        
+       
+    }
+   
+
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 70px;
+        height:70px ;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+header{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+header.sticky{
+    padding: 20px 100px;
+    background-color: rgb(244, 245, 247);
+
+}
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url(download.jpg);
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #56d67d;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color:#000;
+    text-decoration: none;
+}
+
+.right{
+    width:150px;
+    height:40px;
+    margin-bottom: 27px;
+    text-align:center;
+    justify-content: center;
+}
+
+.right:hover{
+    background-color: #66da89;
+}
+
+
+.container{
+    height:1600px;
+    width:1200px;
+    background-color: #1075b2;
+    border-radius: 15px;
+}
+
+.flex-container{
+   display:flex;
+   flex-wrap: wrap;
+   margin-top: 180px;
+}
+
+.flex-item{
+    width: 400px;
+    height:300px;
+    display:flexbox;
+    justify-content: left;
+    justify-content: left;
+    text-align: center;
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 30px;
+    margin-left: 100px;
+}
+.flex-item2{
+    width: 400px;
+    height:300px;
+    display: flexbox;
+    text-align: center;
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 30px;
+    margin-left: 100px;
+}
+
+#flex-item-1{
+    background-color: white;
+    box-shadow:0 0 40px -20px rgba(0,0,0,0.25);
+}
+#flex-item-2{
+    background-color: white;
+}
+#flex-item-3{
+    background-color: white;
+}
+#flex-item-4{
+    background-color: white;
+}
+
+#flex-item-5{
+    background-color: white;
+}
+#flex-item-6{
+    background-color: white;
+}
+#flex-item-7{
+    background-color: white;
+}
+#flex-item-8{
+    background-color: white;
+}
+
+
+#flex-item-1:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -20px rgba(0,0,0,0.25);
+}
+#flex-item-2:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -10px rgba(0,0,0,0.25);
+}
+#flex-item-3:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -10px rgba(0,0,0,0.25);
+}
+#flex-item-4:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -10px rgba(0,0,0,0.25);
+}
+#flex-item-5:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -10px rgba(0,0,0,0.25);
+}
+#flex-item-6:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -10px rgba(0,0,0,0.25);
+}
+#flex-item-7:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -10px rgba(0,0,0,0.25);
+}
+#flex-item-8:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 40px -10px rgba(0,0,0,0.25);
+}
+
+h1{
+    color:black;
+    background-color: rgb(215, 233, 248);
+    margin-top: 12px;
+    font-size: 30px;
+
+}
+
+</style>
+
+<body>
+    
+    <header>
+        <div class="left">
+            <img src="hous2.jpg" alt="">
+            <div style="color:black">DREAM HOMES</div>
+        </div>
+
+        <ul>
+            <li><a style="text-decoration: none;" href="index.html">HOME</a></li>
+            <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+            <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+            <li><a class="active" style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+            <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="right" style="font-size: 20px; border:2px solid rgb(4, 5, 7); border-spacing: 12px;border-radius: 10px; display: inline; padding: 4px;" >
+
+            <a href="login.html" style="text-decoration: none; color:rgb(7, 9, 14); padding: 0 0 4px;">Login | SignUp</a>
+            
+        </div>
+    </header>
+    <section class="banner"></section>
+     <script type="text/javascript">
+
+     window.addEventListener("scroll",function(){
+
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+     });
+a
+     </script>
+
+
+
+     <div class="container">
+     <div class="flex-container">
+
+        <div class="flex-item" id="flex-item-1"> 
+           <h1>HOME|INTERIOR</h1>
+           <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px; font-size:40px;">
+
+               <li style="color:#1075b2">starts at</li>
+               <li style="color:#1075b2">Rs. 500/-</li>
+           </ol>
+
+         <div style="margin-top: 60px;">
+        <a href="package/interior.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+        </div>
+        </div>
+        
+
+        <div class="flex-item" id="flex-item-2">
+            <h1>HOME|EXTERIOR</h1>
+            <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px;font-size:40px;">
+
+                <li style="color:#1075b2">starts at</li>
+                <li style="color:#1075b2">Rs. 500/-</li>
+            </ol>
+            <div style="margin-top: 60px;">   
+                <a href="package/exterior.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+                </div>
+        </div>
+
+        <div class="flex-item" id="flex-item-3">
+            <h1>APARTMENT</h1>
+            <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px;font-size:40px;">
+
+                <li style="color:#1075b2">starts at</li>
+                <li style="color:#1075b2">Rs. 1000/-</li>
+            </ol>
+            <div style="margin-top: 60px;">  
+                <a href="package/apartment.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+                </div>
+        </div>
+
+
+        <div class="flex-item" id="flex-item-4">
+            <h1>BEDROOM</h1>
+            <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px;font-size:40px;">
+
+                <li style="color:#1075b2">starts at</li>
+                <li style="color:#1075b2">Rs. 250/-</li>
+            </ol>
+            <div style="margin-top: 60px;">   
+                <a href="package/bedR.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+                </div>
+        </div>
+
+        
+        <div class="flex-item2" id="flex-item-5">
+            <h1>LIVINGROOM</h1>
+            <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px;font-size:40px;">
+
+                <li style="color:#1075b2">starts at</li>
+                <li style="color:#1075b2">Rs. 250/-</li>
+            </ol>
+            <div style="margin-top: 60px;">   
+            <a href="package/livingR.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+            </div>
+        </div>
+
+        <div class="flex-item2" id="flex-item-6">
+            <h1>GARDEN</h1>
+            <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px;font-size:40px;">
+
+                <li style="color:#1075b2">starts at</li>
+                <li style="color:#1075b2">Rs. 250/-</li>
+            </ol>
+            <div style="margin-top: 60px;">   
+            <a href="package/garden.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+            </div></div>
+
+
+        <div class="flex-item2" id="flex-item-7">
+            <h1>HOTEL</h1>
+            <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px;font-size:40px;">
+
+                <li style="color:#1075b2">starts at</li>
+                <li style="color:#1075b2">Rs. 2000/-</li>
+            </ol>
+            <div style="margin-top: 60px;">   
+            <a href="package/hotel.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+            </div></div>
+
+
+        <div class="flex-item2" id="flex-item-8">
+            <h1>RESTAURANT</h1>
+            <ol style="list-style: none; color:rgb(114, 114, 114); margin-right:10px ; margin-top:16px;font-size:40px;">
+
+                <li style="color:#1075b2">starts at</li>
+                <li style="color:#1075b2">Rs. 2000/-</li>
+            </ol>
+            <div style="margin-top: 60px;">   
+            <a href="package/restaurant.html"><input type="button" style="padding: 10px; width: 100px; margin-left: 220px;" class="btn btn-primary" value="click Here" onclick=""></a>
+            </div></div>
+       
+        
+     </div>
+
+     </div>
+     
+
+</body>
+
+</html>

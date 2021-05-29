@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* CSS Reset */
+
+    body {
+        box-sizing: border-box;
+       background: #000;
+       
+        background-color: #000;
+        background-repeat: no-repeat;
+        height:450px;
+        background-size: cover;
+        background-position: center;
+        
+        
+        
+       
+    }
+   
+
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 8px;
+    }
+
+    .left img {
+        width: 50px;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+
+header{
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url(download.jpg);
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #56d67d;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:#000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+
+
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    justify-content: center;
+    margin-bottom: 14px;
+    margin-left: 30px;
+}
+    
+   
+    
+    .container {
+        border: 2px solid rgb(254, 254, 255);
+        display: flex;
+        margin-top: 45px;
+		margin-left: 30px;
+        position:absolute;
+		color:#fff;
+		justify-content: center;
+		
+        width: 2500px;
+        height:400px;
+        background-color:hsl(0, 0%, 100%);
+       
+    }
+
+	.flex_item{
+
+     width: 400px;
+    height:300px;
+    border:1px solid rgb(0, 0, 0);
+    display:flexbox;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 30px;
+    margin-left: 60px;
+
+    
+    
+	}
+
+	#flex_item_1{
+		background-color: #ffffff;
+	}
+
+	#flex_item_2{
+		background-color: #ffffff;
+	}
+
+    #flex_item_3{
+		background-color: #ffffff;
+	}
+
+    
+#flex_item_1:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 20px 10px #308be0c7;
+}
+#flex_item_2:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 20px 10px #308be0c7;
+}
+#flex_item_3:hover{
+    transform: scale(1.05);
+      box-shadow:0 0 20px 10px #308be0c7;
+}
+
+
+</style>
+
+<body>
+     
+    <header>
+        <div class="left">
+            <img src="download.jpg" alt="">
+            <div style="color:black">DREAM HOMES</div>
+        </div>
+
+        <ul>
+            <li><a style="text-decoration: none;" href="index.html">HOME</a></li>
+            <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+            <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+            <li><a style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+            <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="right" style="font-size: 20px; border:2px solid rgb(4, 5, 7); border-spacing: 12px;border-radius: 10px; display: inline; padding: 4px;" >
+
+            <a href="login.html" style="text-decoration: none; color:rgb(7, 9, 14); padding: 0 0 4px;">Login | SignUp</a>
+            
+        </div>
+    </header>
+    <section class="banner"></section>
+     <script type="text/javascript">
+
+     window.addEventListener("scroll",function(){
+
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+     });
+a
+     </script>
+
+    
+
+
+
+    <div class="container">
+       
+		
+					<div class="flex_item" id="flex_item_1">
+                        <a href="./exterior/bungalow.html"><img src="./exterior/bungalow.jpg" style="height: 240px; width:280px"></a>
+                        <p style="color: rgb(0, 0, 0); font-size: 30px;">Bungalow</p>
+					</div>
+
+					<div class="flex_item" id="flex_item_2">
+                        <a href="./exterior/duplex.html"><img src="./exterior/duplex.jpg" style="height: 240px; width:280px"></a>
+                        <p style="color: rgb(2, 3, 5); font-size: 30px;">Duplex</p>
+					</div>
+
+                    <div class="flex_item" id="flex_item_3">
+                        <a href="./exterior/apartment.html"><img src="./exterior/apartment.jpg" style="height: 240px; width:280px"></a>
+                        <p style="color: rgb(6, 8, 12); font-size: 30px;">Apartment</p>
+					</div>
+		
+
+    </div>
+
+
+
+    <script>
+      
+    </script>
+    
+</body>
+
+</html>

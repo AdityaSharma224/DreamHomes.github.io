@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* CSS Reset */
+    body {
+        box-sizing: border-box;
+       background: #000;
+       /*background: url(img.jpg);*/
+        background-color: white;
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+        
+       
+    }
+    /*DIV1*/
+    					@keyframes img{
+    						from{opacity: 0.001;}
+    						to{opacity: 1;}
+    					}
+					    #img1{
+					    	height: 100px;
+					    	width: 100px;
+					    	padding-left: 300px;
+                            margin-top: 200px;
+					    	
+					    	
+					    	
+					    }
+					    
+					    
+					    #div1{
+					    	padding: 20px;
+					    }
+					   	.p1{
+					   		font-size: 4rem;
+					   		font-family: "Lato",sans-serif;
+					   		color: black;
+					   		text-align: center;
+					   	}
+					   	.p2{
+					   		
+					   		font-size:0.9rem;
+					   		font-family: "Montserrat",sans-serif;
+					   		color: #B2A8A8;
+					   		text-align: center;
+
+					   	}
+					   	.p3{
+					   		font-size:1.5rem;
+					   		font-family: "Montserrat",sans-serif;
+					   		color: #918181;
+					   		text-align: center;
+					   		display: inline-block;
+					   	}
+					    .p4{
+					    	color: #4B4343;
+					    	font-size:1.3rem;
+					   		font-family: "Montserrat",sans-serif;
+					   		display: inline-block;
+					    }
+					    .p10{
+					    	font-size:1.3rem;
+					   		font-family: "Lato",sans-serif;
+					   		color: #fff;
+					   		text-align: center;
+					   		padding-top: 30px;
+					   		
+					   	}
+					    
+					    
+					    
+					    #about-us div p{
+					    	color: black;
+
+					    }
+						
+
+
+						#about-us div{
+							height: 80vh;
+							width: 80vw;
+							color: white;
+							background-color: none;
+							margin:15vh;
+							overflow: hidden;
+						}
+						@keyframes imga{
+							from{opacity: 0.1;}
+							to{opacity: 1;} 
+						}
+						#img2{
+							height: 100px;
+							width: 100px;
+							padding-left: 350px;
+							animation-name: imga;
+							animation-duration: 3s;
+						}
+
+						@keyframes imgb{
+							from{opacity: 0.1;}
+							to{opacity: 1;} 
+						}
+						#img3{
+							height: 100px;
+							width: 100px;
+							padding-left: 400px;
+                            margin-bottom: 40px;
+							animation-name: imgb;
+							animation-duration: 3s;
+						}
+						  
+
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 8px;
+    }
+
+    .left img {
+        width: 50px;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+
+header{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#e6e6e6;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+header.sticky{
+    padding: 20px 100px;
+    background-color: rgb(244, 245, 247);
+
+}
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url(download.jpg);
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #56d67d;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.social-icons li a i {
+    
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+header.sticky .logo,
+header.sticky ul li a {
+    color:#000;
+    text-decoration: none;
+}
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    margin-bottom: 27px;
+    justify-content: center;
+}
+
+.right:hover{
+    background-color: #66da89;
+}
+
+#button{
+	height: 20px;
+	width: 20px;
+}
+
+#footer{
+	background-color: black;
+	width: 100%;
+	height: 200px;
+}
+</style>
+<!--<script type="text/javascript">
+	function myFunction(){
+		document.getElementById("p3").innerHTML="Hello World";
+	}
+</script>
+-->
+<body>
+    
+    <header >
+        <div class="left">
+            <img src="hous2.jpg" alt="">
+            <div style="color:black">DREAM HOMES</div>
+        </div>
+
+        <ul>
+            <li><a style="text-decoration: none;" href="index.html">HOME</a></li>
+            <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+            <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+            <li><a style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+            <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="right" style="font-size: 20px; border:2px solid rgb(4, 5, 7); border-spacing: 12px;border-radius: 10px; display: inline; padding: 4px;" >
+
+            <a href="login.html" style="text-decoration: none; color:rgb(7, 9, 14); padding: 0 0 4px;">Login | SignUp</a>
+            
+        </div>
+    </header>
+    <section class="banner"></section>
+    <div id="about-us">
+    		<div id="div1">
+    			<p class="p1">What is DreamHomes</p><br>
+    			<p class="p2">
+    			Everybody in this world wants a house that they might see in some movie or a youtube vedio or even in there dreams. they work hard there whole life to make there dreams come true. A decade ago,the idea of making the type of house we actuaally wanted was firstly understood by few who had the skills and was very expensive for a middle class man. Thus a man had to compromise there dream.
+    			</p><br>
+    			<p class="p3">
+    				Dreams are valuable. They are the place where the idea is firstly seeded. ANd we dont want you to Compromise on your big Dreams beacuse of money.
+    				Thus to solvethe common mans problem and making your dreams come true, we're here with our concept of <b class="p4">DREAM HOMES</b>
+    			</p> 
+    			
+    			<section id="img1">
+    				<img src="house_aboutus.jpg"/>
+
+
+    		    </section>
+    		<!--<button id="button" onclick="myFunction()"></button>-->
+    		</div>
+ 			<div id="div2">
+ 				<p class="p1">Motivation</p>
+ 				<p class="p4" style="text-align: center;">Customer satisfaction is the first priority
+ 			.Everyone knows that.But for how long the satisfaction is to b meant.For a new phone satisfaction may last upto an year or two. but is there anything that will provide you satisdfaction and comfort for rest of your life? <b>Your House.</b> <br>Our house? How? Thats why we are here.</p>
+ 				<p class="p3">We here use our skills and expertise in this field to mould your dream home/Office. Our team comprises of very experienced and highly qualified architects, interior designers graduated from Stanford,harvard and IITs.</p>
+
+ 				<p class="p2">There are some projects we have covered so far you can look out in the gallery section</p>
+ 				<section id="img2">
+ 					<img src="img2.jpg">
+ 				</section>
+ 			</div>
+ 			<div id="div3">
+ 				<p class="p1">Our Services</p>
+ 				<p class="p3">We Provide various range of options for making a new/ rebuilding your existing place. We Workd on restraunts, private apartments, Offices, Houses,Buldings, etc.
+ 				Ranging From Budget Segment to advanced expensive options for bigger Projects. For more informations about the packages we offer, Please look out for packages tab above.</p>
+ 				<section id="img3">
+ 					<img src="hous2.jpg">
+ 				</section>
+ 			</div>
+ 			  	
+    </div>
+    		<div id="footer">
+ 				
+ 					<p class="p10" style="text-align: center;">Follow us on</p>
+ 						 <div>
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+ 				
+ 			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script type="text/javascript">
+
+
+     window.addEventListener("scroll",function(){
+
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+     });
+
+     </script>
+
+</body>
+
+</html>

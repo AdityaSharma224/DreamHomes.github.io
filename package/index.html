@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* CSS Reset */
+    body {
+        box-sizing: border-box;
+       background: #000;
+       
+        background-color: #000;
+        background-repeat: no-repeat;
+        height:2000px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+        
+       
+    }
+   
+
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 8px;
+    }
+
+    .left img {
+        width: 50px;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+
+header{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+header.sticky{
+    padding: 20px 100px;
+    background-color: rgb(244, 245, 247);
+
+}
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url(download.jpg);
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #56d67d;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:#000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+
+
+header.sticky .logo,
+header.sticky ul li a {
+    color:#000;
+    text-decoration: none;
+}
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    justify-content: center;
+    margin-bottom: 14px;
+    margin-left: 30px;
+}
+
+
+.image img {
+    max-height: 100%;
+}
+
+.image img {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    width:100%;
+    
+    margin-left: 0px;
+    
+}
+
+.content{
+  position: absolute;
+  top: 70%;
+  left: 4%;
+  
+  color: rgb(63, 62, 62);
+  font-size: 35px;
+  font-stretch: semi-expanded;
+  font-weight:lighter  
+}
+
+.content2{
+  position: absolute;
+ 
+  display: flex;
+  
+  top: 80%;
+  left: 4%;
+  
+  color: rgb(155, 148, 148);
+  font-size: 20px;
+  font-stretch: semi-expanded;
+  font-weight:lighter  
+}
+
+
+.button {
+  position: absolute;
+  display: flex;
+  top: 90%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(49, 192, 104);
+  color: white;
+  font-size: 15px;
+  padding: 8px 39px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  text-decoration: none;
+}
+
+.button2 {
+  position: absolute;
+  display:block;
+  top: 90%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(243, 243, 243);
+  color: rgb(100, 98, 98);
+  font-size: 15px;
+  padding: 8px 39px;
+  border: 1px solid darkgray;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  text-decoration: none;
+}
+
+.get{
+
+    width:1200px;
+    height:550px;
+    background-color: #338ff8;
+    margin-top: 160px;
+    
+
+}
+
+.register:hover{
+    color: #e9b817;
+    background-color: #e9b817;
+}
+
+
+
+</style>
+
+<body>
+    
+    <header>
+        <div class="left">
+            <img src="download.jpg" alt="">
+            <div style="color:black">DREAM HOMES</div>
+        </div>
+
+        <ul>
+            <li><a style="text-decoration: none;" href="#">HOME</a></li>
+            <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+            <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+            <li><a style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+            <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="right" style="font-size: 20px; border:2px solid rgb(4, 5, 7); border-spacing: 12px;border-radius: 10px; display: inline; padding: 4px;" >
+
+            <a href="login.html" style="text-decoration: none; color:rgb(7, 9, 14); padding: 0 0 4px;">Login | SignUp</a>
+            
+        </div>
+    </header>
+    <section class="banner"></section>
+     <script type="text/javascript">
+
+     window.addEventListener("scroll",function(){
+
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+     });
+
+     </script>
+
+
+    <picture class="image s-welcome__image" >
+        
+
+        
+        <img src="headerImg.jpg" loading="lazy" width="200%" height="200%" style="margin-top: 90px;" alt="">
+        
+
+        <div >
+            <p class="content">Design your dream home</p>
+        </div>
+
+        <div>
+            <p class="content2">We provide best designs and suggestions</p>
+        </div>
+        
+        
+
+                <div class="button">
+                    <a href="designH.html" type="button" style="color:#fff; text-decoration: none;" >
+                        <span>Start now</span>
+                        
+                    </a>
+                    
+                </div>
+
+                <div class="button2">
+                    <a href="aboutus.html" type="button" style="color:rgb(75, 69, 69); text-decoration: none;" >
+                        <span>How it works?</span>
+                        
+                    </a>
+                </div>
+                
+         
+    </picture>
+
+    <h1 style="color:#dbd8d8; margin-left:18%; margin-top:93px; font-size:90px ;">Specially, Created for Amateurs</h1>
+
+    <div class="get">
+
+        <h1 style="color:rgb(255, 255, 255); margin-left: 420px; margin-top:100px;padding-top: 20px ;font-weight:300; font-size: 40px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >What you will get Here</h1>
+        <p style="text-align: center; padding-top: 30px; margin-left: 10px; font-size: 30px; color:#fff">
+            
+            Design  &nbsp; | &nbsp;  Furnish   &nbsp; | &nbsp; Decorate</p>
+
+            <p style="text-align: center; padding-top: 30px; margin-left: 10px; font-size: 30px; color:#fff">Here you can customize your projects and we suggest you best out of them</p>
+            <a class="register" type="button" style="color:rgb(13, 13, 22); background-color: #ecf00f; border-radius: 10px; padding:20px; font-size:20px; margin-left: 520px; margin-top: 80px;text-decoration: none;">Register for free</a>
+
+        
+    </div>
+
+
+    
+
+    
+
+
+     
+
+</body>
+
+</html>

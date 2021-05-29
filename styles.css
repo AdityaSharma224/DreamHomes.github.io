@@ -1,0 +1,70 @@
+*{
+    box-sizing: content-box; 
+}
+ 
+body{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:10px 20px;
+    font-size: 17px;
+    padding:5px;
+    background-colornone;
+    border:2pxpx solid rgb(90, 238, 243);
+
+}
+
+.container{
+    background-color:#f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius:4px;
+    /*background-image: url(aditya.jpg);*/
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    font-size: 22px;
+    font-style: oblique;
+    background-color: lightgray;
+
+}
+
+fieldset{
+    background-color: #fff;
+    border:2px solid #ccc;
+}
+
+
+.main_heading{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+input[type="submit"]{
+    background-color: lightseagreen;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    width:100%;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: limegreen;
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>slider 1</title>
+  <link rel="stylesheet" href="css/slider1.css"/>
+</head>
+
+<style>
+    body {
+        box-sizing: border-box;
+       background: #000;
+       background: url(img.jpg);
+        background-color: #000;
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+        
+       
+    }
+   
+
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 70px;
+        height: 70px;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+
+header{
+    
+    top: 0px;
+    left: 0px;
+    margin-bottom:3px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+header.sticky{
+    padding: 20px 100px;
+    background-color: rgb(244, 245, 247);
+
+}
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url(download.jpg);
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #56d67d;
+	transition: all 0.75s ease;
+
+}
+
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+
+
+header.sticky .logo,
+header.sticky ul li a {
+    color:#000;
+    text-decoration: none;
+}
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    margin-bottom: 27px;
+    justify-content: center;
+}
+
+.right:hover{
+    background-color: #66da89;
+}
+
+.myLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+      }
+</style>
+<body>
+   <header>
+      <div class="left">
+          <img src="hous2.jpg" alt="">
+          <div style="color:black">DREAM HOMES</div>
+      </div>
+
+      <ul>
+          <li><a style="text-decoration: none;" href="index.html">HOME</a></li>
+          <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+          <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+          <li><a style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+          <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+      </ul>
+
+      <div class="right" style="font-size: 20px; border:2px solid rgb(4, 5, 7); border-spacing: 12px;border-radius: 10px; display: inline; padding: 4px;" >
+
+        <a href="login.html" style="text-decoration: none; color:rgb(7, 9, 14); padding: 0 0 4px;">Login | SignUp</a>
+        
+    </div>
+  </header>
+
+  <h1 style="color:rgb(255, 255, 255); font-size: 70px; font-weight: bolder;text-align: center;">EXTERIOR</h1>
+  
+   <div class="slider">
+      <div class="slider-items">
+          <div  class="item active">
+             <img src="img/1.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/2.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/3.jpg" />
+             
+          </div>
+          <div  class="item">
+            <img src="img/4.jpg" />
+           
+         </div>
+         <div  class="item">
+            <img src="img/5.jpg" />
+            
+         </div>
+
+      </div>
+        <!-- slider controls -->
+          <div class="left-slide"></div>
+          <div class="right-slide">></div>
+        <!-- slider controls -->
+   </div>
+
+   <hr/>
+   <h1 style="color:rgb(255, 255, 255); font-size: 70px; font-weight: bolder;text-align: center;">INTERIOR</h1>
+
+   <div class="slider2">
+      <div class="slider-items2">
+          <div  class="item active">
+             <img src="img/6.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/7.jpg" />
+            
+          </div>
+          <div  class="item">
+             <img src="img/8.jpg" />
+             
+          </div>
+          <div  class="item">
+            <img src="img/9.jpg" />
+            
+         </div>
+         <div  class="item">
+            <img src="img/10.jpg" />
+            
+         </div>
+
+      </div>
+        <!-- slider controls -->
+          <div class="left-slide2"></div>
+          <div class="right-slide2">></div>
+        <!-- slider controls -->
+   </div>
+   <hr/>
+   <!-- third slideshow -->
+
+   <h1 style="color:rgb(255, 255, 255); font-size: 70px; font-weight: bolder;text-align: center;">HOTEL</h1>
+
+   <div class="slider3">
+      <div class="slider-items3">
+          <div  class="item active">
+             <img src="img/16.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/17.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/18.jpg" />
+             
+          </div>
+          <div  class="item">
+            <img src="img/19.jpg" />
+            
+         </div>
+         <div  class="item">
+            <img src="img/20.jpg" />
+            
+         </div>
+
+      </div>
+        <!-- slider controls -->
+          <div class="left-slide3"></div>
+          <div class="right-slide3">></div>
+        <!-- slider controls -->
+   </div>
+   <hr/>
+
+   <h1 style="color:rgb(255, 255, 255); font-size: 70px; font-weight: bolder;text-align: center;">RESTAURANT</h1>
+
+   <div class="slider4">
+      <div class="slider-items4">
+          <div  class="item active">
+             <img src="img/11.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/12.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/13.jpg" />
+            
+          </div>
+          <div  class="item">
+            <img src="img/14.jpg" />
+           
+         </div>
+         <div  class="item">
+            <img src="img/15.jpg" />
+            
+         </div>
+
+      </div>
+        <!-- slider controls -->
+          <div class="left-slide4"></div>
+          <div class="right-slide4">></div>
+        <!-- slider controls -->
+   </div>
+
+   <hr/>
+   <h1 style="color:rgb(255, 255, 255); font-size: 70px; font-weight: bolder;text-align: center;">LIVING ROOM</h1>
+
+   <div class="slider5">
+      <div class="slider-items5">
+          <div  class="item active">
+             <img src="img/21.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/22.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/23.jpg" />
+            
+          </div>
+          <div  class="item">
+            <img src="img/24.jpg" />
+            
+         </div>
+         <div  class="item">
+            <img src="img/25.jpg" />
+            
+         </div>
+
+      </div>
+        <!-- slider controls -->
+          <div class="left-slide5"></div>
+          <div class="right-slide5">></div>
+        <!-- slider controls -->
+   </div>
+   <hr/>
+
+   <h1 style="color:rgb(255, 255, 255); font-size: 70px; font-weight: bolder;text-align: center;">BED ROOM</h1>
+
+   <div class="slider6">
+      <div class="slider-items6">
+          <div  class="item active">
+             <img src="img/26.jpg" />
+            
+          </div>
+          <div  class="item">
+             <img src="img/27.jpg" />
+            
+          </div>
+          <div  class="item">
+             <img src="img/28.jpg" />
+             
+          </div>
+          <div  class="item">
+            <img src="img/29.jpg" />
+            
+         </div>
+         <div  class="item">
+            <img src="img/30.jpg" />
+            
+         </div>
+
+      </div>
+        <!-- slider controls -->
+          <div class="left-slide6"></div>
+          <div class="right-slide6">></div>
+        <!-- slider controls -->
+   </div>
+   <hr/>
+
+   <h1 style="color:rgb(255, 255, 255); font-size: 70px; font-weight: bolder;text-align: center;">GARDEN</h1>
+
+   <div class="slider7">
+      <div class="slider-items7">
+          <div  class="item active">
+             <img src="img/31.jpg" />
+             
+          </div>
+          <div  class="item">
+             <img src="img/32.jpg" />
+            
+          </div>
+          <div  class="item">
+             <img src="img/33.jpg" />
+            
+          </div>
+          <div  class="item">
+            <img src="img/34.jpg" />
+            
+         </div>
+         <div  class="item">
+            <img src="img/35.jpg" />
+            
+         </div>
+
+      </div>
+        <!-- slider controls -->
+          <div class="left-slide7"></div>
+          <div class="right-slide7">></div>
+        <!-- slider controls -->
+   </div>
+
+
+
+
+
+
+   <script src="js/slider1.js"></script>
+</body>
+</html>

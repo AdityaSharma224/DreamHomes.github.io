@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Login & Signup Form | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+        box-sizing: border-box;
+       background: #000;
+       background: url(img.jpg);
+        background-color: #000;
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+        
+       
+    }
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(left, #4b1553, #331322);
+}
+::selection{
+  background: #fa4299;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login{
+  color: #000;
+}
+#login:checked ~ label.signup{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #fc83bb;
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #fa4299;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 70px;
+        height:70px ;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+header{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url(download.jpg);
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background:  #56d67d;
+
+}
+
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+
+
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    justify-content: center;
+}
+  </style>
+  <body>
+
+    
+    <header>
+        <div class="left">
+            <img src="hous2.jpg" alt="">
+            <div style="color:black; margin-top:-10px;">DREAM HOMES</div>
+        </div>
+
+        <ul>
+            <li><a style="text-decoration: none;" href="index.html">HOME</a></li>
+            <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+            <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+            <li><a style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+            <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        
+    </header>
+    
+     
+
+
+    <!-- title-->
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+            Login Form</div>
+            <div class="title signup">
+            Signup Form</div>
+            </div>
+
+<!-- sliding upper portion -->
+<div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" href="index.html" class="slide login"> Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab">
+</div>
+</div>
+
+
+<!-- textArea -->
+<!-- LOGIN PART -->
+<div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+               <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+                <div class="pass-link">
+
+                  <a href="#">Forgot password?</a></div>
+                  <div class="field btn">
+              <div class="btn-layer">
+</div>
+
+<input type="submit"   value="Login">
+            </div>
+<div class="signup-link">
+Not a member? <a href="">Signup now</a></div>
+</form>
+
+<!-- signup part -->
+<form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+<div class="field">
+              <input type="password" placeholder="Confirm password" required>
+            </div>
+<div class="field btn">
+              <div class="btn-layer">
+</div>
+<input type="submit" value="Signup">
+            </div>
+</form>
+</div>
+</div>
+</div>
+
+<script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+  </body>
+</html>

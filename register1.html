@@ -1,0 +1,295 @@
+<html>
+<head>
+	<title> Registration </title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+
+	}
+	body{
+    box-sizing: border-box;
+       background:url(sky.jfif);
+       
+        
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+
+
+
+ 
+	}
+	
+
+
+div.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 10px;
+    }
+
+    div.left img {
+        width: 70px;
+        height:70px ;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    div.left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+
+header{
+    
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url('sky.jfif');
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #56d67d;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+
+
+
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    justify-content: center;
+}
+
+div {
+   box-sizing: border-box;
+   width: 100%;
+   border: 100px solid black;
+   float: left;
+   align-content: center;
+   align-items: center;
+   border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+ }
+  
+form {
+    margin-left: 500px;
+    width: 600px;
+     }
+
+     input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+p{
+  color:#f2f2f2;
+  font-size: 30px;
+}
+
+
+</style>
+</head>
+<script>
+  function GEEKFORGEEKS() {
+      var name = 
+          document.forms["RegForm"]["name"];
+
+      var last = 
+          document.forms["RegForm"]["last"];
+
+      var phone = 
+          document.forms["RegForm"]["phone"];
+     
+      var email = 
+          document.forms["RegForm"]["email"];
+
+      if (name.value == "") {
+          window.alert("Please enter your first name.");
+          name.focus();
+          return false;
+      }
+
+      if (last.value == "") {
+          window.alert("Please enter your last name.");
+          address.focus();
+          return false;
+      }
+
+      if (email.value == "") {
+          window.alert(
+            "Please enter a valid e-mail address.");
+          email.focus();
+          return false;
+      }
+
+      if (phone.value == "") {
+          window.alert(
+            "Please enter your telephone number.");
+          phone.focus();
+          return false;
+      }
+
+     
+
+      return true;
+  }
+</script>
+
+
+<body>
+
+    <header>
+       
+
+        <ul>
+            <li><a style="text-decoration: none;" href="index.html">HOME</a></li>
+            <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+            <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+            <li><a style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+            <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        
+    </header>
+
+    <container class="formS">
+    <h1 style="text-align: center;margin-left: 300px; color:white;padding: 30px;">REGISTRATION FORM</h1>
+        <form name="RegForm" action="payment.html" 
+              onsubmit="return GEEKFORGEEKS()" method="post">
+            <p> FIRST NAME: <input type="text" 
+                            size="65" name="name" /></p>
+            <br />
+            <p>LAST NAME: <input type="text" 
+                               size="65" name="last" />
+          </p>
+            <br />
+            <p>E-mail Address: <input type="text" 
+                            size="65" name="email" /></p>
+            <br />
+        
+            <p>Telephone: <input type="text" 
+                        size="65" name="phone" /></p>
+            <br />
+  
+            
+           
+            <p>
+                <input type="submit" 
+                       value="send" name="Submit" />
+                
+            </p>
+        </form>
+
+    </container>    
+				
+			
+
+
+
+
+</body>
+</html>

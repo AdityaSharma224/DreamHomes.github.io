@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* CSS Reset */
+    body {
+        box-sizing: border-box;
+       background: #000;
+       background: url(img.jpg);
+        background-color: #000;
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+        
+       
+    }
+   
+
+*
+{
+   
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 45px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 70px;
+        height: 70px;
+        margin-left: 18px;
+        filter: invert(150%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 15px;
+        text-align: center;
+        margin-right:0px ;
+    }
+
+
+header{
+    
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 1000000px;
+    text-decoration: none;
+}
+
+header.sticky{
+    padding: 20px 100px;
+    background-color: rgb(244, 245, 247);
+
+}
+
+header.logo{
+    position: relative;
+    font-weight:1000;
+    font-size: 80px;
+    background: url(download.jpg);
+    color:#fff;
+    text-decoration: none;
+    font-size: 2px;
+    text-transform: 2px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    margin-left: 90px;
+
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+	padding: 6px 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #56d67d;
+	transition: all 0.75s ease;
+
+}
+
+
+header ul li a { 
+    position: relative;
+    margin:0 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+header ul li a:hover{
+    color: #020702;
+    background-color:rgb(174, 250, 61);
+   
+    transition: border-bottom 1s;
+   
+}
+
+
+header.sticky .logo,
+header.sticky ul li a {
+    color:#000;
+    text-decoration: none;
+}
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    margin-bottom: 27px;
+    justify-content: center;
+}
+
+.right:hover{
+    background-color: #66da89;
+}
+
+.myLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  background: url("https://www.vandolph.co.za/vandolphsa/wp-content/uploads/2018/09/contact-us-background-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  font-size: 150%;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black;
+}
+@keyframes img{
+    						from{opacity: 0.001;}
+    						to{opacity: 1;}
+    					}
+					    #img1{
+					    	height: 100px;
+					    	width: 100px;
+					    	padding-left: 300px;
+					    	
+					    	animation-name: img;
+					    	animation-duration: 3s;
+					    }
+					    
+					    
+					    #div1{
+					    	padding: 20px;
+					    }
+					   	.p1{
+					   		font-size: 4rem;
+					   		font-family: "Lato",sans-serif;
+					   		color: black;
+					   		text-align: center;
+					   	}
+					   	.p2{
+					   		
+					   		font-size:0.9rem;
+					   		font-family: "Montserrat",sans-serif;
+					   		color: #B2A8A8;
+					   		text-align: center;
+
+					   	}
+					   	.p3{
+					   		font-size:1.5rem;
+					   		font-family: "Montserrat",sans-serif;
+					   		color: #918181;
+					   		text-align: center;
+					   		display: inline-block;
+					   	}
+					    .p4{
+					    	color: #4B4343;
+					    	font-size:1.3rem;
+					   		font-family: "Montserrat",sans-serif;
+					   		display: inline-block;
+					    }
+					    .p10{
+					    	font-size:1.3rem;
+					   		font-family: "Lato",sans-serif;
+					   		color: #fff;
+					   		text-align: center;
+					   		padding-top: 30px;
+					   		
+					   	}
+					    
+					    
+					    
+					    #about-us div p{
+					    	color: black;
+
+					    }
+						
+
+
+						#about-us div{
+							height: 80vh;
+							width: 80vw;
+							color: white;
+							background-color: none;
+							margin:15vh;
+							overflow: hidden;
+						}
+						@keyframes imga{
+							from{opacity: 0.1;}
+							to{opacity: 1;} 
+						}
+						#img2{
+							height: 100px;
+							width: 100px;
+							padding-left: 350px;
+							animation-name: imga;
+							animation-duration: 3s;
+						}
+
+						@keyframes imgb{
+							from{opacity: 0.1;}
+							to{opacity: 1;} 
+						}
+						#img3{
+							height: 100px;
+							width: 100px;
+							padding-left: 400px;
+							animation-name: imgb;
+							animation-duration: 3s;
+						}
+						  
+
+.flex-container{
+  display:flex;
+   flex-wrap: wrap;
+   margin-top: 120px;
+}
+
+.flex-item{
+    width: 400px;
+    height:500px;
+    display:flexbox;
+    justify-content: left;
+    justify-content: left;
+    text-align: center;
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 30px;
+    margin-left: 100px;
+}
+
+
+#flex-item-1{
+    background-color: white;
+    box-shadow:0 0 40px -20px rgba(0,0,0,0.25);
+}
+#flex-item-2{
+    background-color: white;
+}
+#flex-item-3{
+    background-color: white;
+}
+#flex-item-4{
+    background-color: white;
+}
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.social-icons li a i {
+    
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+header.sticky .logo,
+header.sticky ul li a {
+    color:#000;
+    text-decoration: none;
+}
+
+.right{
+    width:150px;
+    height:40px;
+    text-align:center;
+    margin-bottom: 27px;
+    justify-content: center;
+}
+
+.right:hover{
+    background-color: #66da89;
+}
+
+#button{
+	height: 20px;
+	width: 20px;
+}
+
+#footer{
+	background-color: black;
+	width: 100%;
+	height: 200px;
+}
+
+
+</style>
+
+<body>
+    
+    <header>
+        <div class="left">
+            <img src="hous2.jpg" alt="">
+            <div style="color:black">DREAM HOMES</div>
+        </div>
+
+        <ul>
+            <li><a style="text-decoration: none;" href="index.html">HOME</a></li>
+            <li><a style="text-decoration: none;" href="aboutus.html">ABOUT</a></li>
+            <li><a style="text-decoration: none;" href="Gallery.html">GALLERY</a></li>
+            <li><a style="text-decoration: none;" href="designH.html">PACKAGES</a></li>
+            <li><a style="text-decoration: none;" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="right" style="font-size: 20px; border:2px solid rgb(4, 5, 7); border-spacing: 12px;border-radius: 10px; display: inline; padding: 4px;" >
+
+          <a href="login.html" style="text-decoration: none; color:rgb(7, 9, 14); padding: 0 0 4px;">Login | SignUp</a>
+          
+      </div>
+    </header>
+    <section class="banner"></section>
+     <script type="text/javascript">
+
+     window.addEventListener("scroll",function(){
+
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+     });
+
+
+     
+
+     </script>
+
+     
+<div class="myLink">
+    
+    
+    </div>
+    <hr class="rounded">
+    
+    <div class="about-section">
+      <h1><u>Contact Us</u></h1>
+      <p>Find the right architect near your home for your architecture project. On DreamHomes, see results based on your criteria of, property type, work type, or the style you want. Our site exclusively features qualified architects registered with the Order of Architects. It’s never been easier to find the best architect specialised in your property. See architects’ work and view their contact information to get in touch with them directly for your project, all for free. Happy Creating!!</p>
+    
+    </div>
+    
+    <hr class="rounded">
+
+
+    <div class="flex-container">
+      <div class="flex-item" id="flex-item-1"> 
+        <h1 style="color:rgb(19, 18, 18); font-weight: 200;">Aryan Sharma</h1>
+        <p style="color:#bbb;font-size:medium;margin-right:240px ;">Web Developer</p>
+        <p style="color:#000; font-weight: 200;font-size: large;text-align: justify;padding: 16px;margin-top: 10px;">I am Aryan. I doing my Bachelor at Chitkara University. I am here to help you, if you are facing any problem to complete your dream home project,please contact with me , if it is possible I will help you.</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;">My contact number: 6200347610</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;text-align: justify;">My Email Id~ aryan@chitkara.edu.in</p>
+       <div style="margin-top: 55px;">
+      <a href="ContactForm.html"><input type="button"   style="padding: 10px; width: 90%; margin-top: 5px;" class="btn btn-primary" value="click Here" onclick=""></a>
+      </div>
+    </div>
+
+      <div class="flex-item" id="flex-item-2">
+        <h1 style="color:rgb(19, 18, 18); font-weight: 200;">Aditya Sharma</h1>
+        <p style="color:#bbb;font-size:medium;margin-right:240px ;">Web Developer</p>
+        <p style="color:#000; font-weight: 200;font-size: large;text-align: justify;padding: 16px;margin-top: 10px;">I am Aditya. I doing my Bachelor at Chitkara University. I am here to help you, if you are facing any problem to complete your dream home project,please contact with me , if it is possible I will help you.</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;">My contact number: 6200347610</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;text-align: justify;">My Email Id~ aditya@chitkara.edu.in</p>
+         
+          <div style="margin-top: 55px;">   
+              <a href="ContactForm.html"><input type="button" style="padding: 10px; width: 90%;  margin-top: 5px;" class="btn btn-primary" value="click Here" onclick=""></a>
+              </div>
+      </div>
+
+      <div class="flex-item" id="flex-item-3">
+        <h1 style="color:rgb(19, 18, 18); font-weight: 200;">Ankita kalia</h1>
+        <p style="color:#bbb;font-size:medium;margin-right:240px ;">Web Developer</p>
+        <p style="color:#000; font-weight: 200;font-size: large;text-align: justify;padding: 16px;margin-top: 10px;">I am Ankita, an software engineer. I doing my Bachelor at Chitkara University. I am here to help you, if you are facing any problem to complete your dream home project, kindly contact me , if it is possible I will surely help you.</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;">My contact number: 6200347610</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;text-align: justify;">My Email Id~ ankita@chitkara.edu.in</p>
+          
+          <div style="margin-top: 30px;">   
+              <a href="ContactForm.html"><input type="button" style="padding: 10px; width: 90%;  margin-top: 5px;" class="btn btn-primary" value="click Here" onclick=""></a>
+              </div>
+      </div>
+
+
+      <div class="flex-item" id="flex-item-4">
+        <h1 style="color:rgb(19, 18, 18); font-weight: 200;">Anubhav Sharma</h1>
+        <p style="color:#bbb;font-size:medium;margin-right:240px ;">Web Developer</p>
+        <p style="color:#000; font-weight: 200;font-size: large;text-align: justify;padding: 16px;margin-top: 10px;">I am Mike. I doing my Bachelor at Chitkara University. I am here to help you, if you are facing any problem to complete your dream home project,please contact with me , if it is possible I will help you.</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;">My contact number: 6200347610</p>
+        <p style="color:#000;margin-top: 8px; font-weight: 200;font-size: large; margin-right: 230px;text-align: justify;">My Email Id~ anubhav@chitkara.edu.in</p>
+         
+          <div style="margin-top: 55px;">   
+            <a href="ContactForm.html"> <input type="button" style="padding: 10px; width: 90%;  margin-top:5px;" class="btn btn-primary" value="click Here" onclick=""></a>
+              </div>
+      </div>
+
+      
+     
+     
+      
+   </div>
+
+  </div>
+  <div id="footer">
+   
+     <p class="p10" style="text-align: center;">Follow us on</p>
+        <div>
+          <ul class="horizontal-list text-center social-icons">
+              <li>
+                  <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <i class="fab fa-stack-overflow"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <i class="fab fa-google-plus-g"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <i class="fab fa-quora"></i>
+                  </a>
+              </li>
+          </ul>
+
+      </div>
+
+  </div>
+   
+ </div>
+
+
+
+
+
+    
+
+</body>
+
+</html>
